@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            width: 400px;
+            height: 300px;
+            background-color: #71B2E4;
+            grid-template-areas: 
+            "header header header"
+            "aside article article"
+            "footer footer footer";
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: greenyellow;
+            grid-column: span 3; 
+            text-align: center;
+        }
+
+        div {
+            grid-area: aside;
+            background-color: green;
+            grid-column: 1;
+            text-align: center; 
+        }
+
+        article {
+            grid-area: article;
+            background-color: lightcoral;
+            grid-column: span 2;
+            background-color: orange;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: greenyellow;
+            grid-column: span 3;
+            text-align: center;
+        }
+
+        section {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border: 1px black solid;
+            position: relative;
+            display: inline-block;
+            top: 180px;
+            right: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <header>Header</header>
+    <div>Aside</div>
+    <Article>Article
+        <section>Image 1</section>
+        <section>Image 2</section>
+        <section>Image 3</section>
+    </Article>
+    <footer>Footer</footer>
+    </div>  
+</body>
+</html>

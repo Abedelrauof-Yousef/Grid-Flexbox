@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: aqua;
+        }
+        .flexContainer {
+            display: flex;
+            flex-direction: column;
+            background-color: blanchedalmond;
+            width: 300px;
+            height: 300px;
+            border: 2px black solid;
+            border-radius: 25px;
+            gap: 5px;
+            justify-content: center;
+
+
+
+        }
+
+        div > p {
+            text-align: center;
+            text-align: justify;
+            
+            
+            
+            
+        }
+
+        .flexContainer > div  {
+            margin-top: 10px;
+            min-height: 25px;
+            margin-left: 90px;
+            margin-bottom: 15px;
+            border-bottom: 2px white solid;
+            
+            
+        }
+
+        .one{
+            border-bottom: 1px white solid;
+        }
+        
+        .img1 {
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            
+        }
+
+        .img2 {
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 90px;
+            margin-left: 10px;
+            
+        }
+
+        .img3 {
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 155px;
+            margin-left: 10px;
+            
+        }
+
+        .img4 {
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 220px;
+            margin-left: 10px;
+            
+        }
+
+        .flexContainer:not(.flexContainer:nth-child()) {
+            font-weight: bold;
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <img class="img1" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="profile picutre" height="60px"; width="60px">
+        <img class="img2" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="profile picutre" height="60px"; width="60px">
+        <img class="img3" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="profile picutre" height="60px"; width="60px">
+        <img class="img4" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="profile picutre" height="60px"; width="60px">
+    </div>
+    <div class="flexContainer">
+        <div class="one"><strong>User#1</strong>
+            <p>IOS development</p>
+        </div>
+        <div><strong>User#2</strong>
+            <p>computer programming</p>
+        </div>
+        <div>
+            <strong>User#3</strong>
+            <p>Softwere Engineering</p>
+        </div>
+        <div><strong>User#4</strong>
+            <p>Computer Engineering</p>
+        </div>
+    </div>
+    
+</body>
+</html>
