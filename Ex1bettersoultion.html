@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50px 200px 200px 80px 50px;
+
+        }
+
+        header {
+            background-color: greenyellow;
+            grid-column: span 3;
+            text-align: center;
+            padding: 25px;
+        }
+        .contentContainer{
+            grid-column: 2 / -1;
+        }
+
+        .section2 {
+            background-color: pink;
+            grid-row: 2/2;
+            text-align: center;
+        
+        
+        }
+
+        .section3 {
+            background-color: burlywood;
+            text-align: center;
+            
+    
+        }
+
+        .MainContent {
+            background-color: olive;
+            height:300px;
+            text-align: center;
+                
+        }
+        .ExtraContent{
+            background-color: slategray;
+            height: 105px;
+            text-align: center;
+        }
+
+        .relatedimg {
+            background-color: royalblue;
+            grid-row: 4;
+            grid-column: 1/-2;
+            text-align: center;
+            
+        }
+
+        .relatedpos {
+            background-color: red;
+            grid-row: 4;
+            text-align: center;
+        }
+
+        footer {
+            background-color: blue;
+            grid-row: 5;
+            grid-column: span 3;
+            text-align: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>Section 1</header>
+        <div class="section2">Section 2</div>
+        <div class="contentContainer">
+        <div class="MainContent">Main Content
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum nam explicabo, mollitia officia tenetur recusandae aspernatur est hic dolor earum quo aut ipsa aliquam totam at cupiditate tempore quos.</p>
+        </div>
+        <div class="ExtraContent">Extra Content</div>
+        </div>
+        <div class="section3">Section 3</div>
+        
+        <div class="relatedimg">Related Images</div>
+        <div class="relatedpos">Related Posts</div>
+        <footer>Footer</footer>
+    </div>
+    
+</body>
+</html>
